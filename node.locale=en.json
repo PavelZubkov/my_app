@@ -1,1 +1,9 @@
-{}
+{
+	"$my_app_Email_add_page_title": "Add email",
+	"$my_app_Email_add_title": "Add",
+	"$my_app_Email_field_name": "Email",
+	"$my_app_Email_list_page_title": "Emails",
+	"$my_app_Title_field_name": "Title",
+	"$my_app_message_duplicate": "Email duplicate",
+	"$my_app_message_required": "Required"
+}
