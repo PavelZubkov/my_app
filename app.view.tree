@@ -1,2 +1,44 @@
-$my_app $mol_view
-	sub / \Hello fucking world!
+$my_app $mol_book2
+	message *
+		required @ \Required
+		duplicate @ \Email duplicate
+	pages /
+		<= Email_list_page $mol_page
+			title @ \Emails
+			tools /
+				<= Email_new $mol_link
+					arg * add \
+					sub / <= Add_icon $mol_icon_plus
+			body /
+				<= Emails $mol_list
+					rows <= email_rows <= emails /
+						<= Email*obj $mol_labeler
+							label /
+								<= email_title* \
+								<= Email_copy* $mol_button_copy text <= email_value*
+							content / <= email_value* \
+		<= Email_add_page $mol_page
+			title @ \Add email
+			tools /
+				<= Close $mol_link
+					sub / <= Close_icon $mol_icon_cross
+					arg * add null
+			body /
+				<= Form $mol_form 
+					form_fields /
+						<= Title_field $mol_form_field
+							name @ \Title
+							bid <= title_bid \
+							Content <= Title_control $mol_string
+								value? <=> title_new? \
+						<= Email_field $mol_form_field
+							name @ \Email
+							bid <= email_bid \
+							Content <= Email_control $mol_string
+								value? <=> email_new? \
+					submit_allowed => form_valid
+					buttons /
+						<= Email_add $mol_button_major
+							title @ \Add
+							click? <=> email_add? null
+							enabled <= form_valid
