@@ -5950,7 +5950,7 @@ var $;
 		}
 		Email_list_page(){
 			const obj = new this.$.$mol_page();
-			(obj.title) = () => (this.$.$mol_locale.text("$my_app_Email_list_page_title"));
+			(obj.title) = () => ((this.$.$mol_locale.text("$my_app_Email_list_page_title")));
 			(obj.tools) = () => ([(this.Email_new())]);
 			(obj.body) = () => ([(this.Emails())]);
 			return obj;
@@ -5979,7 +5979,7 @@ var $;
 		}
 		Title_field(){
 			const obj = new this.$.$mol_form_field();
-			(obj.name) = () => (this.$.$mol_locale.text("$my_app_Title_field_name"));
+			(obj.name) = () => ((this.$.$mol_locale.text("$my_app_Title_field_name")));
 			(obj.bid) = () => ((this.title_bid()));
 			(obj.Content) = () => ((this.Title_control()));
 			return obj;
@@ -5998,7 +5998,7 @@ var $;
 		}
 		Email_field(){
 			const obj = new this.$.$mol_form_field();
-			(obj.name) = () => (this.$.$mol_locale.text("$my_app_Email_field_name"));
+			(obj.name) = () => ((this.$.$mol_locale.text("$my_app_Email_field_name")));
 			(obj.bid) = () => ((this.email_bid()));
 			(obj.Content) = () => ((this.Email_control()));
 			return obj;
@@ -6012,7 +6012,7 @@ var $;
 		}
 		Email_add(){
 			const obj = new this.$.$mol_button_major();
-			(obj.title) = () => (this.$.$mol_locale.text("$my_app_Email_add_title"));
+			(obj.title) = () => ((this.$.$mol_locale.text("$my_app_Email_add_title")));
 			(obj.click) = (next) => ((this.email_add(next)));
 			(obj.enabled) = () => ((this.form_valid()));
 			return obj;
@@ -6025,7 +6025,7 @@ var $;
 		}
 		Email_add_page(){
 			const obj = new this.$.$mol_page();
-			(obj.title) = () => (this.$.$mol_locale.text("$my_app_Email_add_page_title"));
+			(obj.title) = () => ((this.$.$mol_locale.text("$my_app_Email_add_page_title")));
 			(obj.tools) = () => ([(this.Close())]);
 			(obj.body) = () => ([(this.Form())]);
 			return obj;
