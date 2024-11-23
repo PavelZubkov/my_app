@@ -144,7 +144,7 @@ $mol_labeler $mol_list
 
 $mol_page $mol_view
 	dom_name \article
-	field *
+	attr *
 		^
 		tabIndex <= tabindex -1
 	sub /
