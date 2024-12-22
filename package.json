@@ -153,11 +153,15 @@
     "$mol_storage",
     "$mol_mem_persist",
     "$mol_file",
+    "$mol_file_base",
+    "$mol_lock",
+    "$mol_compare_array",
     "$mol_charset_decode",
     "$mol_charset",
     "$mol_charset_encoding",
     "$mol_charset_encode",
-    "$mol_compare_array",
+    "$mol_file_transaction",
+    "$node_modules",
     "$mol_icon_cross",
     "$mol_string",
     "$mol_hotkey",
@@ -167,7 +171,6 @@
     "$mol_button_major"
   ],
   "dependencies": {
-    "jsdom": "*",
-    "chokidar": "*"
+    "jsdom": "*"
   }
 }
